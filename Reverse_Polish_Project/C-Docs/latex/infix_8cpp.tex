@@ -1,0 +1,57 @@
+\hypertarget{infix_8cpp}{}\doxysection{infix.\+cpp File Reference}
+\label{infix_8cpp}\index{infix.cpp@{infix.cpp}}
+{\ttfamily \#include \char`\"{}stack.\+cpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}infix.\+h\char`\"{}}\newline
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{infix_8cpp_ace41ada8b4f0b93d2b8e7ff6d1ab7f86}{INFIX\+\_\+\+CPP}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{infix_8cpp_a511bdac51d0bdc44ba7a2b2ec3fa41f6}{infix2postfix}} (char $\ast$infix, char $\ast$postfix)
+\begin{DoxyCompactList}\small\item\em El metodo infix2postfix convierte una expresion infija a posfija. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{infix_8cpp_ae5439313492acfe46e52122e71b0bc8b}{precedence}} (char symbol)
+\begin{DoxyCompactList}\small\item\em checks the precedence of a character symbol \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{infix_8cpp_ace41ada8b4f0b93d2b8e7ff6d1ab7f86}\label{infix_8cpp_ace41ada8b4f0b93d2b8e7ff6d1ab7f86}} 
+\index{infix.cpp@{infix.cpp}!INFIX\_CPP@{INFIX\_CPP}}
+\index{INFIX\_CPP@{INFIX\_CPP}!infix.cpp@{infix.cpp}}
+\doxysubsubsection{\texorpdfstring{INFIX\_CPP}{INFIX\_CPP}}
+{\footnotesize\ttfamily \#define INFIX\+\_\+\+CPP}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{infix_8cpp_a511bdac51d0bdc44ba7a2b2ec3fa41f6}\label{infix_8cpp_a511bdac51d0bdc44ba7a2b2ec3fa41f6}} 
+\index{infix.cpp@{infix.cpp}!infix2postfix@{infix2postfix}}
+\index{infix2postfix@{infix2postfix}!infix.cpp@{infix.cpp}}
+\doxysubsubsection{\texorpdfstring{infix2postfix()}{infix2postfix()}}
+{\footnotesize\ttfamily void infix2postfix (\begin{DoxyParamCaption}\item[{char $\ast$}]{infix,  }\item[{char $\ast$}]{postfix }\end{DoxyParamCaption})}
+
+
+
+El metodo infix2postfix convierte una expresion infija a posfija. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infix} & \\
+\hline
+{\em postfix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{infix_8cpp_ae5439313492acfe46e52122e71b0bc8b}\label{infix_8cpp_ae5439313492acfe46e52122e71b0bc8b}} 
+\index{infix.cpp@{infix.cpp}!precedence@{precedence}}
+\index{precedence@{precedence}!infix.cpp@{infix.cpp}}
+\doxysubsubsection{\texorpdfstring{precedence()}{precedence()}}
+{\footnotesize\ttfamily int precedence (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+checks the precedence of a character symbol 
+
+El metodo precedence asigna prioridades a los operadores. 

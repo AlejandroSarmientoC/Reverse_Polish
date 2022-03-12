@@ -1,0 +1,90 @@
+\hypertarget{login_8h_source}{}\doxysection{login.\+h}
+\mbox{\hyperlink{login_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{archivo_8h}{archivo.h}}"{}}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include "{}\mbox{\hyperlink{md5_8h}{md5.h}}"{}}}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{26 \textcolor{keywordtype}{void} \mbox{\hyperlink{login_8h_a714c83c6898e18f73621626df5bb59c3}{registration}}()\{}
+\DoxyCodeLine{27     system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{28     fflush(stdin);}
+\DoxyCodeLine{29     cout << \textcolor{stringliteral}{"{}\(\backslash\)tRegistration"{}} << endl;}
+\DoxyCodeLine{30     fflush(stdin);}
+\DoxyCodeLine{31     cout << \textcolor{stringliteral}{"{}\(\backslash\)nName: "{}};}
+\DoxyCodeLine{32     cin.getline(\mbox{\hyperlink{archivo_8h_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}, 100, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{33     fflush(stdin);}
+\DoxyCodeLine{34     cout << \textcolor{stringliteral}{"{}Password: "{}};}
+\DoxyCodeLine{35     cin.getline(\mbox{\hyperlink{archivo_8h_aa002e5c02353b4a76ac7577acf0db2af}{pass}}, 100, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{36     fflush(stdin);}
+\DoxyCodeLine{37     \mbox{\hyperlink{archivo_8h_a8688be4caef7cc809832e9c58a42dd24}{insert}}(\mbox{\hyperlink{archivo_8h_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}, \mbox{\hyperlink{archivo_8h_aa002e5c02353b4a76ac7577acf0db2af}{pass}});}
+\DoxyCodeLine{38 \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{44 \textcolor{keywordtype}{void} \mbox{\hyperlink{login_8h_af76b7b46958dabf5e4ee9a492f0ec3fa}{login}}()\{}
+\DoxyCodeLine{45     \textcolor{keywordflow}{do}\{}
+\DoxyCodeLine{46         system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{47         cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tLOG IN"{}} << endl;}
+\DoxyCodeLine{48         fflush(stdin);}
+\DoxyCodeLine{49         cout << \textcolor{stringliteral}{"{}\(\backslash\)nName: "{}};}
+\DoxyCodeLine{50         cin.getline(\mbox{\hyperlink{archivo_8h_a6a25c9dd189923f332bbeccdb92cf371}{nameaux}}, 100, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{51         fflush(stdin);}
+\DoxyCodeLine{52         cout << \textcolor{stringliteral}{"{}Password: "{}};}
+\DoxyCodeLine{53         cin.getline(\mbox{\hyperlink{archivo_8h_a5f4ea2d487bb857a19ed73b31ca7621c}{passaux}}, 100, \textcolor{charliteral}{'\(\backslash\)n'});}
+\DoxyCodeLine{54         fflush(stdin);}
+\DoxyCodeLine{55         \textcolor{keywordflow}{if}(strcmp(\mbox{\hyperlink{archivo_8h_a6a25c9dd189923f332bbeccdb92cf371}{nameaux}}, \mbox{\hyperlink{archivo_8h_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}}) == 0 \&\& strcmp(\mbox{\hyperlink{archivo_8h_a5f4ea2d487bb857a19ed73b31ca7621c}{passaux}}, \mbox{\hyperlink{archivo_8h_aa002e5c02353b4a76ac7577acf0db2af}{pass}}) == 0)\{}
+\DoxyCodeLine{56             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tWelcome "{}} << \mbox{\hyperlink{archivo_8h_aeaf846aa21a7d016a52f0b5b0c2f5544}{name}} << endl;}
+\DoxyCodeLine{57             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{58         \}}
+\DoxyCodeLine{59         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(\mbox{\hyperlink{archivo_8h_a5cb549e3882ed95e78500aa2a8675e71}{readfile}}(\mbox{\hyperlink{archivo_8h_a6a25c9dd189923f332bbeccdb92cf371}{nameaux}}, \mbox{\hyperlink{archivo_8h_a5f4ea2d487bb857a19ed73b31ca7621c}{passaux}}))\{}
+\DoxyCodeLine{60             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tWelcome "{}} << \mbox{\hyperlink{archivo_8h_a6a25c9dd189923f332bbeccdb92cf371}{nameaux}} << endl;}
+\DoxyCodeLine{61             system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{62             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{63         \}}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{65             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tWrong name or password"{}} << endl;}
+\DoxyCodeLine{66             system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{67         \}}
+\DoxyCodeLine{68         system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{69     \}\textcolor{keywordflow}{while}(\textcolor{keyword}{true});}
+\DoxyCodeLine{70 \}}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{76 \textcolor{keywordtype}{void} \mbox{\hyperlink{login_8h_ad0d3f4caf2bfcc003623d003da5bdece}{registro}}()\{}
+\DoxyCodeLine{77     }
+\DoxyCodeLine{78     \textcolor{keywordtype}{int} option;}
+\DoxyCodeLine{79     \textcolor{keywordtype}{char} answer;}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81     system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83     cout << \textcolor{stringliteral}{"{}\(\backslash\)t\(\backslash\)nWELCOME TO REVERSE POLISH NOTATION CALCULATOR\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{84     cout << \textcolor{stringliteral}{"{}1. Sign up\(\backslash\)n"{}};}
+\DoxyCodeLine{85     cout << \textcolor{stringliteral}{"{}2. Sign in\(\backslash\)n"{}};}
+\DoxyCodeLine{86     cout << \textcolor{stringliteral}{"{}3. Exit\(\backslash\)n"{}};}
+\DoxyCodeLine{87     cout << \textcolor{stringliteral}{"{}Enter your option: "{}}; }
+\DoxyCodeLine{88     cin >> option;}
+\DoxyCodeLine{89 }
+\DoxyCodeLine{90     \textcolor{keywordflow}{switch}(option)\{}
+\DoxyCodeLine{91         \textcolor{keywordflow}{case} 1:}
+\DoxyCodeLine{92             \mbox{\hyperlink{login_8h_a714c83c6898e18f73621626df5bb59c3}{registration}}();}
+\DoxyCodeLine{93             cout << \textcolor{stringliteral}{"{}\(\backslash\)nDo you want to sign in? (y/n): "{}};}
+\DoxyCodeLine{94             cin >> answer;}
+\DoxyCodeLine{95             \textcolor{keywordflow}{if}(answer == \textcolor{charliteral}{'y'} || answer == \textcolor{charliteral}{'Y'})\{}
+\DoxyCodeLine{96                 \mbox{\hyperlink{login_8h_af76b7b46958dabf5e4ee9a492f0ec3fa}{login}}();}
+\DoxyCodeLine{97                 system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{98             \}}
+\DoxyCodeLine{99             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{100         \textcolor{keywordflow}{case} 2:}
+\DoxyCodeLine{101             \mbox{\hyperlink{login_8h_af76b7b46958dabf5e4ee9a492f0ec3fa}{login}}();}
+\DoxyCodeLine{102             system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{103             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{104         \textcolor{keywordflow}{case} 3:}
+\DoxyCodeLine{105             cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)tGoodbye"{}} << endl;}
+\DoxyCodeLine{106             \textcolor{keywordflow}{break};}
+\DoxyCodeLine{107     \}}
+\DoxyCodeLine{108 \}}
+
+\end{DoxyCode}

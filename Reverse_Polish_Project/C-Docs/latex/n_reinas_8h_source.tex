@@ -1,0 +1,109 @@
+\hypertarget{n_reinas_8h_source}{}\doxysection{n\+Reinas.\+h}
+\mbox{\hyperlink{n_reinas_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{const} \textcolor{keywordtype}{int} \mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}} = 8;}
+\DoxyCodeLine{18 \textcolor{keywordtype}{int} \mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}];}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{29 \textcolor{keywordtype}{bool} \mbox{\hyperlink{n_reinas_8h_ac781d300daee9bcfb0aa644738106bd2}{valido}}(\textcolor{keywordtype}{int} i)\{}
+\DoxyCodeLine{30     \textcolor{keywordtype}{bool} v = \textcolor{keyword}{true};}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{32     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} r=0;r<i;r++)\{}
+\DoxyCodeLine{33         v = v \&\& (\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i] != \mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[r]);}
+\DoxyCodeLine{34         v = v \&\& ((\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i]-\/i) != (\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[r]-\/r));}
+\DoxyCodeLine{35         v = v \&\& ((\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i]+i) != (\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[r]+r));}
+\DoxyCodeLine{36     \}}
+\DoxyCodeLine{37     \textcolor{keywordflow}{return} v;}
+\DoxyCodeLine{38 \}}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45 \textcolor{keywordtype}{void} \mbox{\hyperlink{n_reinas_8h_a0914d4cccda3355e00d4f361f94d21b7}{mostrarTablero}}()\{}
+\DoxyCodeLine{46     \textcolor{keywordtype}{int} tablero[\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}][\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}];}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};i++)\{}
+\DoxyCodeLine{49         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};j++)\{}
+\DoxyCodeLine{50             tablero[i][j] = 0;}
+\DoxyCodeLine{51         \}}
+\DoxyCodeLine{52     \}}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54     cout << \textcolor{stringliteral}{"{}\(\backslash\)nMostrando Arreglo"{}} << endl;}
+\DoxyCodeLine{55     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};i++)\{}
+\DoxyCodeLine{56         cout << \mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i]<< \textcolor{stringliteral}{"{}|"{}};}
+\DoxyCodeLine{57     \}}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59     cout << endl;}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};i++)\{}
+\DoxyCodeLine{62         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};j++)\{}
+\DoxyCodeLine{63             tablero[\mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[j]][j] = 1;}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65     \}}
+\DoxyCodeLine{66 }
+\DoxyCodeLine{67     cout << \textcolor{stringliteral}{"{}\(\backslash\)nMostrando Tablero"{}} << endl;}
+\DoxyCodeLine{68     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i=0;i<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};i++)\{}
+\DoxyCodeLine{69         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} j=0;j<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}};j++)\{}
+\DoxyCodeLine{70             cout << tablero[i][j]<< \textcolor{stringliteral}{"{}|"{}};}
+\DoxyCodeLine{71         \}}
+\DoxyCodeLine{72         cout << endl;}
+\DoxyCodeLine{73     \}}
+\DoxyCodeLine{74     cout << endl;}
+\DoxyCodeLine{75 }
+\DoxyCodeLine{76 \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{83 \textcolor{comment}{//PONER REINA}}
+\DoxyCodeLine{84 \textcolor{keywordtype}{void} \mbox{\hyperlink{n_reinas_8h_abb264558cb998d69731bd5ec41822d35}{ponerReina}}(\textcolor{keywordtype}{int} i, \textcolor{keywordtype}{bool} \&solucion)\{}
+\DoxyCodeLine{85     \textcolor{keywordtype}{int} k=0;}
+\DoxyCodeLine{86     solucion = \textcolor{keyword}{false};}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88     \textcolor{keywordflow}{do}\{}
+\DoxyCodeLine{89         \mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i] = k;}
+\DoxyCodeLine{90         k++;}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \mbox{\hyperlink{n_reinas_8h_a0914d4cccda3355e00d4f361f94d21b7}{mostrarTablero}}();}
+\DoxyCodeLine{93         cout << endl;}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95         \textcolor{keywordflow}{if}(\mbox{\hyperlink{n_reinas_8h_ac781d300daee9bcfb0aa644738106bd2}{valido}}(i))\{}
+\DoxyCodeLine{96             \textcolor{keywordflow}{if}(i<(\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}-\/1))\{}
+\DoxyCodeLine{97                 \mbox{\hyperlink{n_reinas_8h_abb264558cb998d69731bd5ec41822d35}{ponerReina}}(i+1, solucion);}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99                 \textcolor{comment}{//vuelta atras}}
+\DoxyCodeLine{100                 \textcolor{keywordflow}{if}(!solucion)\{}
+\DoxyCodeLine{101                     \mbox{\hyperlink{n_reinas_8h_a5e9bd55a13e40f4fe21c6b261cfe208d}{reinas}}[i]  = 0;}
+\DoxyCodeLine{102                 \}}
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104             \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{105                 solucion = \textcolor{keyword}{true};}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107         \}}
+\DoxyCodeLine{108     \}\textcolor{keywordflow}{while}(!solucion \&\& (k<\mbox{\hyperlink{n_reinas_8h_ab2b6b0c222cd1ce70d6a831f57241e59}{N}}));}
+\DoxyCodeLine{109 \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{116 \textcolor{keywordtype}{void} \mbox{\hyperlink{n_reinas_8h_aeab42b90b2c0b239dd99dc97acdeafec}{nReinas}}()\{}
+\DoxyCodeLine{117     \textcolor{keywordtype}{bool} solucion;}
+\DoxyCodeLine{118 }
+\DoxyCodeLine{119     \mbox{\hyperlink{n_reinas_8h_abb264558cb998d69731bd5ec41822d35}{ponerReina}}(0, solucion);}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121     \textcolor{keywordflow}{if}(solucion)\{}
+\DoxyCodeLine{122         cout << \textcolor{stringliteral}{"{}Solucion encontrada"{}} << endl;}
+\DoxyCodeLine{123         \mbox{\hyperlink{n_reinas_8h_a0914d4cccda3355e00d4f361f94d21b7}{mostrarTablero}}();}
+\DoxyCodeLine{124     \}}
+\DoxyCodeLine{125     \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{126         cout << \textcolor{stringliteral}{"{}No hay solucion"{}} << endl;}
+\DoxyCodeLine{127     \}}
+\DoxyCodeLine{128 \}}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{135 \textcolor{keywordtype}{void} \mbox{\hyperlink{n_reinas_8h_a6057bda517b6ed8b131a9ebc23e5fdb6}{infoNReinas}}()\{}
+\DoxyCodeLine{136     cout << \textcolor{stringliteral}{"{}Extra Especial"{}} << endl;}
+\DoxyCodeLine{137     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)t\(\backslash\)t\(\backslash\)tProblema de las N-\/Reinas"{}} << endl;}
+\DoxyCodeLine{138     cout << \textcolor{stringliteral}{"{}\(\backslash\)nEl juego de colocar n reinas en un tablero de ajedrez sin que se ataquen entre si,"{}}<< endl;}
+\DoxyCodeLine{139     cout << \textcolor{stringliteral}{"{}es otro ejemplo del uso de los metodos de busqueda exhaustiva, sistematica, de"{}} << endl;}
+\DoxyCodeLine{140     cout << \textcolor{stringliteral}{"{}los algoritmos de vuelta atras (back traking). El problema se plantea a continuacion: "{}} << endl;}
+\DoxyCodeLine{141     cout << \textcolor{stringliteral}{"{}\(\backslash\)n\(\backslash\)nDado un tablero de ajedrez (n x n casillas), hay que situar n reinas de forma que ninguna"{}} << endl;}
+\DoxyCodeLine{142     cout << \textcolor{stringliteral}{"{}de ellas pueda actuar (comer) a cualquiera de las otras."{}} << endl;}
+\DoxyCodeLine{143     system(\textcolor{stringliteral}{"{}pause"{}});}
+\DoxyCodeLine{144 \}}
+
+\end{DoxyCode}

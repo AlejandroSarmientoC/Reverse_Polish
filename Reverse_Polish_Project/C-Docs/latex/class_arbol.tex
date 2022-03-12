@@ -1,0 +1,140 @@
+\hypertarget{class_arbol}{}\doxysection{Arbol Class Reference}
+\label{class_arbol}\index{Arbol@{Arbol}}
+
+
+{\ttfamily \#include $<$Arbol.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_arbol_a4f5d3e25a0e1a40cb09cefa39378b7be}{Arbol}} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arbol_a5caf90b4d995274a9a5fe2b441f75fc8}{insertar}} (\mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}})
+\begin{DoxyCompactList}\small\item\em El metodo insertar recibe un dato y lo inserta en el arbol. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arbol_a981e38f31602ce99bb6c8b0b02e58f6e}{insertar}} (\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$, \mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}})
+\begin{DoxyCompactList}\small\item\em El metodo insertar recibe 2 datos y los inserta en el arbol. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_arbol_abf9409ecb95cf19adb6887352dafffca}{vacio}} ()
+\begin{DoxyCompactList}\small\item\em El metodo vacio verifica si el arbol esta vacio. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$ \mbox{\hyperlink{class_arbol_af4590ce869981b0e8c20bf0551934db3}{get\+Raiz}} (void)
+\begin{DoxyCompactList}\small\item\em Get the Raiz object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arbol_ac915dcd2b62eb347994af494327d51bd}{set\+Raiz}} (\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$new\+Raiz)
+\begin{DoxyCompactList}\small\item\em Set the Raiz object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arbol_a52ebe24d92a0b78dd9855f82b10aad09}{inorder}} (\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$nodo)
+\begin{DoxyCompactList}\small\item\em El metodo inorden recibe un nodo y lo imprime en orden. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_arbol_ae7cbcd10e59f8eecfd47b75a1d13126c}{eliminar}} (\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$nodo, \mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}})
+\begin{DoxyCompactList}\small\item\em El metodo eliminar recibe un dato y lo elimina del arbol. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_arbol_a4f5d3e25a0e1a40cb09cefa39378b7be}\label{class_arbol_a4f5d3e25a0e1a40cb09cefa39378b7be}} 
+\index{Arbol@{Arbol}!Arbol@{Arbol}}
+\index{Arbol@{Arbol}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{Arbol()}{Arbol()}}
+{\footnotesize\ttfamily Arbol\+::\+Arbol (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_arbol_ae7cbcd10e59f8eecfd47b75a1d13126c}\label{class_arbol_ae7cbcd10e59f8eecfd47b75a1d13126c}} 
+\index{Arbol@{Arbol}!eliminar@{eliminar}}
+\index{eliminar@{eliminar}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{eliminar()}{eliminar()}}
+{\footnotesize\ttfamily void Arbol\+::eliminar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$}]{nodo,  }\item[{\mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}}}]{dato }\end{DoxyParamCaption})}
+
+
+
+El metodo eliminar recibe un dato y lo elimina del arbol. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodo} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arbol_af4590ce869981b0e8c20bf0551934db3}\label{class_arbol_af4590ce869981b0e8c20bf0551934db3}} 
+\index{Arbol@{Arbol}!getRaiz@{getRaiz}}
+\index{getRaiz@{getRaiz}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{getRaiz()}{getRaiz()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_nodo}{Nodo}} $\ast$ Arbol\+::get\+Raiz (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Get the Raiz object. 
+
+\begin{DoxyReturn}{Returns}
+Nodo$\ast$ 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_arbol_a52ebe24d92a0b78dd9855f82b10aad09}\label{class_arbol_a52ebe24d92a0b78dd9855f82b10aad09}} 
+\index{Arbol@{Arbol}!inorder@{inorder}}
+\index{inorder@{inorder}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{inorder()}{inorder()}}
+{\footnotesize\ttfamily void Arbol\+::inorder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$}]{nodo }\end{DoxyParamCaption})}
+
+
+
+El metodo inorden recibe un nodo y lo imprime en orden. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em nodo} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arbol_a981e38f31602ce99bb6c8b0b02e58f6e}\label{class_arbol_a981e38f31602ce99bb6c8b0b02e58f6e}} 
+\index{Arbol@{Arbol}!insertar@{insertar}}
+\index{insertar@{insertar}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{insertar()}{insertar()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void Arbol\+::insertar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$}]{nodo,  }\item[{\mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}}}]{dato }\end{DoxyParamCaption})}
+
+
+
+El metodo insertar recibe 2 datos y los inserta en el arbol. 
+
+\mbox{\Hypertarget{class_arbol_a5caf90b4d995274a9a5fe2b441f75fc8}\label{class_arbol_a5caf90b4d995274a9a5fe2b441f75fc8}} 
+\index{Arbol@{Arbol}!insertar@{insertar}}
+\index{insertar@{insertar}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{insertar()}{insertar()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void Arbol\+::insertar (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_arbol_8h_abf54adff333449bb3b073f624eae3d72}{T}}}]{dato }\end{DoxyParamCaption})}
+
+
+
+El metodo insertar recibe un dato y lo inserta en el arbol. 
+
+\mbox{\Hypertarget{class_arbol_ac915dcd2b62eb347994af494327d51bd}\label{class_arbol_ac915dcd2b62eb347994af494327d51bd}} 
+\index{Arbol@{Arbol}!setRaiz@{setRaiz}}
+\index{setRaiz@{setRaiz}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{setRaiz()}{setRaiz()}}
+{\footnotesize\ttfamily void Arbol\+::set\+Raiz (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_nodo}{Nodo}} $\ast$}]{new\+Raiz }\end{DoxyParamCaption})}
+
+
+
+Set the Raiz object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Raiz} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_arbol_abf9409ecb95cf19adb6887352dafffca}\label{class_arbol_abf9409ecb95cf19adb6887352dafffca}} 
+\index{Arbol@{Arbol}!vacio@{vacio}}
+\index{vacio@{vacio}!Arbol@{Arbol}}
+\doxysubsubsection{\texorpdfstring{vacio()}{vacio()}}
+{\footnotesize\ttfamily bool Arbol\+::vacio (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+El metodo vacio verifica si el arbol esta vacio. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_arbol_8h}{Arbol.\+h}}\item 
+\mbox{\hyperlink{_arbol_8cpp}{Arbol.\+cpp}}\end{DoxyCompactItemize}

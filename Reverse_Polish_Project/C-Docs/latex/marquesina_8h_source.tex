@@ -1,0 +1,139 @@
+\hypertarget{marquesina_8h_source}{}\doxysection{marquesina.\+h}
+\mbox{\hyperlink{marquesina_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{11 \textcolor{preprocessor}{\#include <unistd.h>}}
+\DoxyCodeLine{12 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 }
+\DoxyCodeLine{17 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define clrscr(); system("{}cls"{}});}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keywordtype}{void} \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(\textcolor{keywordtype}{int} x ,\textcolor{keywordtype}{int} y)\{}
+\DoxyCodeLine{22     HANDLE hcon = GetStdHandle(STD\_OUTPUT\_HANDLE);}
+\DoxyCodeLine{23     COORD dwPos;}
+\DoxyCodeLine{24     dwPos.X = x;}
+\DoxyCodeLine{25     dwPos.Y = y;}
+\DoxyCodeLine{26     SetConsoleCursorPosition(hcon, dwPos);}
+\DoxyCodeLine{27 \}}
+\DoxyCodeLine{28 }
+\DoxyCodeLine{33 \textcolor{keywordtype}{void} \mbox{\hyperlink{marquesina_8h_a3f9782d685bcb141961dd12e65b9855f}{marquesina}}()\{}
+\DoxyCodeLine{34     \textcolor{keywordtype}{int} a=0, b=56;}
+\DoxyCodeLine{35     \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{short} repite;}
+\DoxyCodeLine{36     \textcolor{keywordtype}{string} espe=\textcolor{stringliteral}{"{}UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE"{}};}
+\DoxyCodeLine{37     \textcolor{keywordtype}{string} i=\textcolor{stringliteral}{"{}INTEGRANTES: "{}};}
+\DoxyCodeLine{38     \textcolor{keywordtype}{string} n1=\textcolor{stringliteral}{"{}NACIMBA ESTEVEN"{}};}
+\DoxyCodeLine{39     \textcolor{keywordtype}{string} n2=\textcolor{stringliteral}{"{}MONGA SEBASTIAN"{}};}
+\DoxyCodeLine{40     \textcolor{keywordtype}{string} n3=\textcolor{stringliteral}{"{}SARMIENTO ALEJANDRO"{}};}
+\DoxyCodeLine{41     \textcolor{keywordtype}{string} m=\textcolor{stringliteral}{"{}MATERIA: ESTRUCTURA DE DATOS"{}};}
+\DoxyCodeLine{42     \textcolor{keywordtype}{string} nrc=\textcolor{stringliteral}{"{}NRC: 7167\(\backslash\)n"{}};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44     system(\textcolor{stringliteral}{"{}cls"{}});}
+\DoxyCodeLine{45     system(\textcolor{stringliteral}{"{}COLOR 3"{}});}
+\DoxyCodeLine{46     \textcolor{keywordflow}{for}(repite=1; repite<=1; repite++)\{}
+\DoxyCodeLine{47         \textcolor{comment}{//ESPE}}
+\DoxyCodeLine{48         \textcolor{keywordflow}{for} (a=1;a<=50;a++)\{}
+\DoxyCodeLine{49             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{50             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,1);}
+\DoxyCodeLine{51             cout<<espe;}
+\DoxyCodeLine{52             Sleep (50);}
+\DoxyCodeLine{53         \}}
+\DoxyCodeLine{54         \textcolor{keywordflow}{for} (b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{55             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{56             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,1);}
+\DoxyCodeLine{57             cout<<espe;}
+\DoxyCodeLine{58             Sleep (50);}
+\DoxyCodeLine{59         \}}
+\DoxyCodeLine{60         \textcolor{comment}{//integrantes}}
+\DoxyCodeLine{61         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{62             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{63             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,3);}
+\DoxyCodeLine{64             cout<<i;}
+\DoxyCodeLine{65             Sleep(50);}
+\DoxyCodeLine{66         \}}
+\DoxyCodeLine{67         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{68             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{69             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,3);}
+\DoxyCodeLine{70             cout<<i;}
+\DoxyCodeLine{71             Sleep(50);}
+\DoxyCodeLine{72         \}}
+\DoxyCodeLine{73         \textcolor{comment}{//Nombre 1}}
+\DoxyCodeLine{74         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{75             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{76             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,5);}
+\DoxyCodeLine{77             cout<<n1;}
+\DoxyCodeLine{78             Sleep(50);}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{81             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{82             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,5);}
+\DoxyCodeLine{83             cout<<n1;}
+\DoxyCodeLine{84             Sleep(50);}
+\DoxyCodeLine{85         \}}
+\DoxyCodeLine{86         \textcolor{comment}{//Nombre 2}}
+\DoxyCodeLine{87         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{88             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{89             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,6);}
+\DoxyCodeLine{90             cout<<n2;}
+\DoxyCodeLine{91             Sleep(50);}
+\DoxyCodeLine{92         \}}
+\DoxyCodeLine{93         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{94             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{95             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,6);}
+\DoxyCodeLine{96             cout<<n2;}
+\DoxyCodeLine{97             Sleep(50);}
+\DoxyCodeLine{98         \}}
+\DoxyCodeLine{99         \textcolor{comment}{//Nombre 3}}
+\DoxyCodeLine{100         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{101             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{102             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,7);}
+\DoxyCodeLine{103             cout<<n3;}
+\DoxyCodeLine{104             Sleep(50);}
+\DoxyCodeLine{105         \}}
+\DoxyCodeLine{106         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{107             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{108             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,7);}
+\DoxyCodeLine{109             cout<<n3;}
+\DoxyCodeLine{110             Sleep(50);}
+\DoxyCodeLine{111         \}}
+\DoxyCodeLine{112         \textcolor{comment}{//MATERIA}}
+\DoxyCodeLine{113         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{114             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{115             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,9);}
+\DoxyCodeLine{116             cout<<m;}
+\DoxyCodeLine{117             Sleep(50);}
+\DoxyCodeLine{118         \}}
+\DoxyCodeLine{119         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{120             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{121             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,9);}
+\DoxyCodeLine{122             cout<<m;}
+\DoxyCodeLine{123             Sleep(50);}
+\DoxyCodeLine{124         \}}
+\DoxyCodeLine{125         \textcolor{comment}{//NRC}}
+\DoxyCodeLine{126         \textcolor{keywordflow}{for}(a=1;a<=50;a++)\{}
+\DoxyCodeLine{127             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{128             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(a,10);}
+\DoxyCodeLine{129             cout<<nrc;}
+\DoxyCodeLine{130             Sleep(50);}
+\DoxyCodeLine{131         \}}
+\DoxyCodeLine{132         \textcolor{keywordflow}{for}(b=50;b>=1;b-\/-\/)\{}
+\DoxyCodeLine{133             \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{134             \mbox{\hyperlink{marquesina_8h_ae824443b3f661414ba1f2718e17fe97d}{gotoxy}}(b,10);}
+\DoxyCodeLine{135             cout<<nrc;}
+\DoxyCodeLine{136             Sleep(50);}
+\DoxyCodeLine{137         \}}
+\DoxyCodeLine{138         \mbox{\hyperlink{marquesina_8h_ada0430ff0133c72d1ab38ca336610f5a}{clrscr}}();}
+\DoxyCodeLine{139         cout<<\textcolor{stringliteral}{"{}UNIVERSIDAD DE LAS FUERZAS ARMADAS ESPE\(\backslash\)n\(\backslash\)n"{}};}
+\DoxyCodeLine{140         cout<<\textcolor{stringliteral}{"{}INTEGRANTES: \(\backslash\)n"{}};}
+\DoxyCodeLine{141         cout<<\textcolor{stringliteral}{"{}NACIMBA ESTEVEN\(\backslash\)n"{}};}
+\DoxyCodeLine{142         cout<<\textcolor{stringliteral}{"{}MONGA SEBASTIAN\(\backslash\)n"{}};}
+\DoxyCodeLine{143         cout<<\textcolor{stringliteral}{"{}SARMIENTO ALEJANDRO\(\backslash\)n"{}};}
+\DoxyCodeLine{144         cout<<\textcolor{stringliteral}{"{}\(\backslash\)nMATERIA: ESTRUCTURA DE DATOS\(\backslash\)n"{}};}
+\DoxyCodeLine{145         cout<<\textcolor{stringliteral}{"{}NRC: 7167\(\backslash\)n"{}};}
+\DoxyCodeLine{146     \}}
+\DoxyCodeLine{147 \}}
+
+\end{DoxyCode}

@@ -1,0 +1,71 @@
+\hypertarget{infix_8h}{}\doxysection{infix.\+h File Reference}
+\label{infix_8h}\index{infix.h@{infix.h}}
+
+
+Clase Infix.  
+
+
+{\ttfamily \#include \char`\"{}stack.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{infix_8h_ae7d2251268dc1f5661311b62a037de6e}{precedence}} (char x)
+\begin{DoxyCompactList}\small\item\em El metodo precedence asigna prioridades a los operadores. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{infix_8h_a511bdac51d0bdc44ba7a2b2ec3fa41f6}{infix2postfix}} (char $\ast$infix, char $\ast$postfix)
+\begin{DoxyCompactList}\small\item\em El metodo infix2postfix convierte una expresion infija a posfija. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase Infix. 
+
+\begin{DoxyAuthor}{Author}
+Sarmienrto Alejandro 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{Version}
+1.\+0 
+\end{DoxyVersion}
+\begin{DoxyDate}{Date}
+2022-\/01-\/14
+\end{DoxyDate}
+\begin{DoxyCopyright}{Copyright}
+Copyright (c) 2022 
+\end{DoxyCopyright}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{infix_8h_a511bdac51d0bdc44ba7a2b2ec3fa41f6}\label{infix_8h_a511bdac51d0bdc44ba7a2b2ec3fa41f6}} 
+\index{infix.h@{infix.h}!infix2postfix@{infix2postfix}}
+\index{infix2postfix@{infix2postfix}!infix.h@{infix.h}}
+\doxysubsubsection{\texorpdfstring{infix2postfix()}{infix2postfix()}}
+{\footnotesize\ttfamily void infix2postfix (\begin{DoxyParamCaption}\item[{char $\ast$}]{infix,  }\item[{char $\ast$}]{postfix }\end{DoxyParamCaption})}
+
+
+
+El metodo infix2postfix convierte una expresion infija a posfija. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em infix} & \\
+\hline
+{\em postfix} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{infix_8h_ae7d2251268dc1f5661311b62a037de6e}\label{infix_8h_ae7d2251268dc1f5661311b62a037de6e}} 
+\index{infix.h@{infix.h}!precedence@{precedence}}
+\index{precedence@{precedence}!infix.h@{infix.h}}
+\doxysubsubsection{\texorpdfstring{precedence()}{precedence()}}
+{\footnotesize\ttfamily int precedence (\begin{DoxyParamCaption}\item[{char}]{symbol }\end{DoxyParamCaption})}
+
+
+
+El metodo precedence asigna prioridades a los operadores. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+int
+\end{DoxyReturn}
+El metodo precedence asigna prioridades a los operadores. 

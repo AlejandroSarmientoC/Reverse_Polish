@@ -1,0 +1,207 @@
+\hypertarget{classstack}{}\doxysection{stack\texorpdfstring{$<$}{<} Object \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classstack}\index{stack$<$ Object $>$@{stack$<$ Object $>$}}
+
+
+{\ttfamily \#include $<$stack.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classstack_a6e44d0b8c75c72a92d5b8b088300ae2b}{stack}} ()
+\begin{DoxyCompactList}\small\item\em Construct a new stack object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstack_a3c274cda2e380a238e189bf9d8c9d182}{stack}} (const \mbox{\hyperlink{classstack}{stack}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Construct a new stack object. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classstack_a18d523b851d8fe39d2d47ac5a6aa3226}{$\sim$stack}} ()
+\begin{DoxyCompactList}\small\item\em Destroy the stack object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstack_a386a9c754b194f2df3776c750e25a0b8}{is\+Empty}} () const
+\begin{DoxyCompactList}\small\item\em El metodo is\+Empty verifica si la pila esta vacia. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classstack_a6f076a75f480f915632c57fe91fe728d}{is\+Full}} () const
+\begin{DoxyCompactList}\small\item\em El Metodo \mbox{\hyperlink{classstack_a6f076a75f480f915632c57fe91fe728d}{is\+Full()}} verifica si la pila esta llena. \end{DoxyCompactList}\item 
+const Object \& \mbox{\hyperlink{classstack_a2a4246052a45b8a8c712760940c149c9}{top}} () const
+\item 
+void \mbox{\hyperlink{classstack_aabce6b42b0fc8e64c9a779095d595ab7}{make\+Empty}} ()
+\begin{DoxyCompactList}\small\item\em El metodo \mbox{\hyperlink{classstack_aabce6b42b0fc8e64c9a779095d595ab7}{make\+Empty()}} vacia la pila. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstack_aac156cd596ae358c194cd23ceea4d177}{pop}} ()
+\begin{DoxyCompactList}\small\item\em El metodo pop elimina el elemento del tope de la pila. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classstack_a04b2b5ad7fb2b81b0d3d5fbad279aabf}{push}} (const Object \&x)
+\begin{DoxyCompactList}\small\item\em El metodo push agrega un elemento al tope de la pila. \end{DoxyCompactList}\item 
+Object \mbox{\hyperlink{classstack_af6ed22a989efb2604481e2bf38361768}{top\+And\+Pop}} ()
+\begin{DoxyCompactList}\small\item\em El metodo \mbox{\hyperlink{classstack_af6ed22a989efb2604481e2bf38361768}{top\+And\+Pop()}} elimina el elemento del tope de la pila y lo retorna. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classstack}{stack}} \& \mbox{\hyperlink{classstack_a29538d032dab7ca97e8dca19fd6694ae}{operator=}} (const \mbox{\hyperlink{classstack}{stack}} \&rhs)
+\begin{DoxyCompactList}\small\item\em El metodo operator= asigna el valor de una pila a otra. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}{size}} ()
+\begin{DoxyCompactList}\small\item\em El metodo \mbox{\hyperlink{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}{size()}} retorna el tamaño de la pila. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classstack_a6e44d0b8c75c72a92d5b8b088300ae2b}\label{classstack_a6e44d0b8c75c72a92d5b8b088300ae2b}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!stack@{stack}}
+\index{stack@{stack}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{stack()}{stack()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+\mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\mbox{\hyperlink{classstack}{\+::stack}}}
+
+
+
+Construct a new stack object. 
+
+\mbox{\Hypertarget{classstack_a3c274cda2e380a238e189bf9d8c9d182}\label{classstack_a3c274cda2e380a238e189bf9d8c9d182}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!stack@{stack}}
+\index{stack@{stack}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{stack()}{stack()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+\mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\mbox{\hyperlink{classstack}{\+::stack}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Construct a new stack object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classstack_a18d523b851d8fe39d2d47ac5a6aa3226}\label{classstack_a18d523b851d8fe39d2d47ac5a6aa3226}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!````~stack@{$\sim$stack}}
+\index{````~stack@{$\sim$stack}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$stack()}{~stack()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+\mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::$\sim$\mbox{\hyperlink{classstack}{stack}}}
+
+
+
+Destroy the stack object. 
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classstack_a386a9c754b194f2df3776c750e25a0b8}\label{classstack_a386a9c754b194f2df3776c750e25a0b8}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!isEmpty@{isEmpty}}
+\index{isEmpty@{isEmpty}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{isEmpty()}{isEmpty()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+bool \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::is\+Empty}
+
+
+
+El metodo is\+Empty verifica si la pila esta vacia. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classstack_a6f076a75f480f915632c57fe91fe728d}\label{classstack_a6f076a75f480f915632c57fe91fe728d}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!isFull@{isFull}}
+\index{isFull@{isFull}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{isFull()}{isFull()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+bool \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::is\+Full}
+
+
+
+El Metodo \mbox{\hyperlink{classstack_a6f076a75f480f915632c57fe91fe728d}{is\+Full()}} verifica si la pila esta llena. 
+
+\begin{DoxyReturn}{Returns}
+true 
+
+false 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstack_aabce6b42b0fc8e64c9a779095d595ab7}\label{classstack_aabce6b42b0fc8e64c9a779095d595ab7}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!makeEmpty@{makeEmpty}}
+\index{makeEmpty@{makeEmpty}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{makeEmpty()}{makeEmpty()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+void \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::make\+Empty}
+
+
+
+El metodo \mbox{\hyperlink{classstack_aabce6b42b0fc8e64c9a779095d595ab7}{make\+Empty()}} vacia la pila. 
+
+\mbox{\Hypertarget{classstack_a29538d032dab7ca97e8dca19fd6694ae}\label{classstack_a29538d032dab7ca97e8dca19fd6694ae}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!operator=@{operator=}}
+\index{operator=@{operator=}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+const \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$ \& \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$ \&}]{rhs }\end{DoxyParamCaption})}
+
+
+
+El metodo operator= asigna el valor de una pila a otra. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+const stack\& 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstack_aac156cd596ae358c194cd23ceea4d177}\label{classstack_aac156cd596ae358c194cd23ceea4d177}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!pop@{pop}}
+\index{pop@{pop}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{pop()}{pop()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+void \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::pop}
+
+
+
+El metodo pop elimina el elemento del tope de la pila. 
+
+\mbox{\Hypertarget{classstack_a04b2b5ad7fb2b81b0d3d5fbad279aabf}\label{classstack_a04b2b5ad7fb2b81b0d3d5fbad279aabf}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!push@{push}}
+\index{push@{push}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+void \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::push (\begin{DoxyParamCaption}\item[{const Object \&}]{x }\end{DoxyParamCaption})}
+
+
+
+El metodo push agrega un elemento al tope de la pila. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em element} & \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}\label{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!size@{size}}
+\index{size@{size}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+int \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::size}
+
+
+
+El metodo \mbox{\hyperlink{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}{size()}} retorna el tamaño de la pila. 
+
+\begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classstack_a2a4246052a45b8a8c712760940c149c9}\label{classstack_a2a4246052a45b8a8c712760940c149c9}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!top@{top}}
+\index{top@{top}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{top()}{top()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+const Object \& \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::top}
+
+\mbox{\Hypertarget{classstack_af6ed22a989efb2604481e2bf38361768}\label{classstack_af6ed22a989efb2604481e2bf38361768}} 
+\index{stack$<$ Object $>$@{stack$<$ Object $>$}!topAndPop@{topAndPop}}
+\index{topAndPop@{topAndPop}!stack$<$ Object $>$@{stack$<$ Object $>$}}
+\doxysubsubsection{\texorpdfstring{topAndPop()}{topAndPop()}}
+{\footnotesize\ttfamily template$<$class Object $>$ \\
+Object \mbox{\hyperlink{classstack}{stack}}$<$ Object $>$\+::top\+And\+Pop}
+
+
+
+El metodo \mbox{\hyperlink{classstack_af6ed22a989efb2604481e2bf38361768}{top\+And\+Pop()}} elimina el elemento del tope de la pila y lo retorna. 
+
+\begin{DoxyReturn}{Returns}
+Object 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{stack_8h}{stack.\+h}}\item 
+\mbox{\hyperlink{stack_8cpp}{stack.\+cpp}}\end{DoxyCompactItemize}

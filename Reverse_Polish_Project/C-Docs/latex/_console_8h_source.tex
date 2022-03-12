@@ -1,0 +1,119 @@
+\hypertarget{_console_8h_source}{}\doxysection{Console.\+h}
+\mbox{\hyperlink{_console_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef CONSOLE\_H}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define CONSOLE\_H}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <windows.h>}}
+\DoxyCodeLine{18 }
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#define UP    72}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#define LEFT  75}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#define RIGTH 77}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#define DOWN  80}}
+\DoxyCodeLine{23 \textcolor{preprocessor}{\#define ESC   27}}
+\DoxyCodeLine{24 \textcolor{preprocessor}{\#define ENTER 13}}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 }
+\DoxyCodeLine{27 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacefg}{fg}} \{}
+\DoxyCodeLine{28     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{29     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{30         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_ad950286f71e2cef2d2991be19531ea40}{BWhite}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[97m"{}};}
+\DoxyCodeLine{33     \}}
+\DoxyCodeLine{34 }
+\DoxyCodeLine{35     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{36     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{37         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_a16d8bf21aa8a538279b42e0476b1b198}{Gray}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{38     \{}
+\DoxyCodeLine{39         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[90m"{}};}
+\DoxyCodeLine{40     \}}
+\DoxyCodeLine{41 }
+\DoxyCodeLine{42     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{43     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{44         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_a322e4d8cff03b34a33bf2a7fe947d642}{BGray}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[37m"{}};}
+\DoxyCodeLine{47     \}}
+\DoxyCodeLine{48 }
+\DoxyCodeLine{49     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{50     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{51         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_ac9ae755e4574dc24df91c3acd2ac057a}{Green}}(std::basic\_ostream< CharT, Traits >\& os)        }
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53             \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[32m"{}};}
+\DoxyCodeLine{54     \}}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{57     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{58         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_af7dbdde68a4f120dd8ab270ec9db09c4}{BGreen}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{59     \{}
+\DoxyCodeLine{60         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[92m"{}};}
+\DoxyCodeLine{61     \}}
+\DoxyCodeLine{62 }
+\DoxyCodeLine{63     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{64     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{65         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_ab2f48d4bf17c395cb343e3bda50bfc0d}{Red}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{66     \{}
+\DoxyCodeLine{67         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[31m"{}};}
+\DoxyCodeLine{68     \}}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70 }
+\DoxyCodeLine{71     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{72     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{73         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_abe1e17a48d018225699d2e0647bb723f}{BRed}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{74     \{}
+\DoxyCodeLine{75         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[91m"{}};}
+\DoxyCodeLine{76     \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{79     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{80         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_ab4fbb7e1f9427d8a740c0699242ad6d7}{Yellow}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{81     \{}
+\DoxyCodeLine{82         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[33m"{}};}
+\DoxyCodeLine{83     \}}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{86     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{87         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacefg_a8033af8cb9809143b7c5b12f80ad5941}{BYellow}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{88     \{}
+\DoxyCodeLine{89         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[93m"{}};}
+\DoxyCodeLine{90     \}}
+\DoxyCodeLine{91         }
+\DoxyCodeLine{92 \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96 \textcolor{keyword}{namespace }\mbox{\hyperlink{namespacebg}{bg}} \{}
+\DoxyCodeLine{97     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{98     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{99         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacebg_aa34457656ff8e995f9420043b33816b1}{BWhite}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{100     \{}
+\DoxyCodeLine{101         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[47m"{}};}
+\DoxyCodeLine{102     \}}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104     \textcolor{keyword}{template} < \textcolor{keyword}{class} CharT, \textcolor{keyword}{class} Traits >}
+\DoxyCodeLine{105     \textcolor{keyword}{constexpr}}
+\DoxyCodeLine{106         std::basic\_ostream< CharT, Traits >\& \mbox{\hyperlink{namespacebg_afb09463975f288ddfecedd5dde2f80dc}{Black}}(std::basic\_ostream< CharT, Traits >\& os)}
+\DoxyCodeLine{107     \{}
+\DoxyCodeLine{108         \textcolor{keywordflow}{return} os << \textcolor{stringliteral}{"{}\(\backslash\)033[40m"{}};}
+\DoxyCodeLine{109     \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111 \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114 \textcolor{keyword}{class }\mbox{\hyperlink{class_console}{Console}}}
+\DoxyCodeLine{115 \{}
+\DoxyCodeLine{116 }
+\DoxyCodeLine{117 \textcolor{keyword}{public}:}
+\DoxyCodeLine{118     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_a345fb0f1d8400ff0e02b27f36e302b12}{hideCursor}}(\textcolor{keywordtype}{bool});}
+\DoxyCodeLine{119     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_a64350372a38fbbe7658aafa5715bb1dc}{changeSize}}(\textcolor{keywordtype}{int},\textcolor{keywordtype}{int});}
+\DoxyCodeLine{120     \textcolor{keywordtype}{void} \mbox{\hyperlink{class_console_a5a8c4ed760a0e45b7abdc7261e7aeaaf}{gotoXY}}(\textcolor{keywordtype}{int},\textcolor{keywordtype}{int});}
+\DoxyCodeLine{121 }
+\DoxyCodeLine{122 \};}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124 }
+\DoxyCodeLine{125 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

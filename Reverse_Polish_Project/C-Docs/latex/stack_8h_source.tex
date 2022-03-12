@@ -1,0 +1,53 @@
+\hypertarget{stack_8h_source}{}\doxysection{stack.\+h}
+\mbox{\hyperlink{stack_8h}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 }
+\DoxyCodeLine{13 \textcolor{preprocessor}{\#ifndef STACK\_H}}
+\DoxyCodeLine{14 \textcolor{preprocessor}{\#define STACK\_H}}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{16 \textcolor{preprocessor}{\#include <cstdlib>}}
+\DoxyCodeLine{17 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{18 \textcolor{preprocessor}{\#include <sstream>}}
+\DoxyCodeLine{19 \textcolor{preprocessor}{\#include <string>}}
+\DoxyCodeLine{20 \textcolor{preprocessor}{\#include <stdio.h>}}
+\DoxyCodeLine{21 \textcolor{preprocessor}{\#include <string.h>}}
+\DoxyCodeLine{22 \textcolor{preprocessor}{\#include <cmath>}}
+\DoxyCodeLine{23 }
+\DoxyCodeLine{24 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{25 }
+\DoxyCodeLine{26 \textcolor{keyword}{template} <\textcolor{keyword}{class} Object>}
+\DoxyCodeLine{27 \textcolor{keyword}{class }\mbox{\hyperlink{classstack}{stack}}\{}
+\DoxyCodeLine{28     \textcolor{keyword}{public}:}
+\DoxyCodeLine{33         \mbox{\hyperlink{classstack_a6e44d0b8c75c72a92d5b8b088300ae2b}{stack}}();}
+\DoxyCodeLine{39         \mbox{\hyperlink{classstack_a6e44d0b8c75c72a92d5b8b088300ae2b}{stack}}(\textcolor{keyword}{const} \mbox{\hyperlink{classstack}{stack}} \& rhs);}
+\DoxyCodeLine{44         \mbox{\hyperlink{classstack_a18d523b851d8fe39d2d47ac5a6aa3226}{\string~stack}}();}
+\DoxyCodeLine{50         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classstack_a386a9c754b194f2df3776c750e25a0b8}{isEmpty}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{57         \textcolor{keywordtype}{bool} \mbox{\hyperlink{classstack_a6f076a75f480f915632c57fe91fe728d}{isFull}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{keyword}{const} Object \& \mbox{\hyperlink{classstack_a2a4246052a45b8a8c712760940c149c9}{top}}() \textcolor{keyword}{const};}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{65         \textcolor{keywordtype}{void} \mbox{\hyperlink{classstack_aabce6b42b0fc8e64c9a779095d595ab7}{makeEmpty}}();}
+\DoxyCodeLine{70         \textcolor{keywordtype}{void} \mbox{\hyperlink{classstack_aac156cd596ae358c194cd23ceea4d177}{pop}}();}
+\DoxyCodeLine{76         \textcolor{keywordtype}{void} \mbox{\hyperlink{classstack_a04b2b5ad7fb2b81b0d3d5fbad279aabf}{push}}( \textcolor{keyword}{const} Object \& x);}
+\DoxyCodeLine{82         Object \mbox{\hyperlink{classstack_af6ed22a989efb2604481e2bf38361768}{topAndPop}}();}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{90         \textcolor{keyword}{const} \mbox{\hyperlink{classstack}{stack}} \& \mbox{\hyperlink{classstack_a29538d032dab7ca97e8dca19fd6694ae}{operator=}}( \textcolor{keyword}{const} \mbox{\hyperlink{classstack}{stack}} \& rhs );}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{97         \textcolor{keywordtype}{int} \mbox{\hyperlink{classstack_a5c0ddd2178db8b9f0a6fb518319b27d8}{size}}();}
+\DoxyCodeLine{98 }
+\DoxyCodeLine{99     \textcolor{keyword}{private}:}
+\DoxyCodeLine{100         \textcolor{keyword}{class }Node\{}
+\DoxyCodeLine{101     \textcolor{keyword}{public}:}
+\DoxyCodeLine{102             Object element;}
+\DoxyCodeLine{103             Node *next;}
+\DoxyCodeLine{110             Node(\textcolor{keyword}{const} Object \& theElement, Node * n = NULL)\{}
+\DoxyCodeLine{111                 element = theElement;}
+\DoxyCodeLine{112                 next = n;}
+\DoxyCodeLine{113             \}}
+\DoxyCodeLine{114         \};}
+\DoxyCodeLine{115         Node* stack\_top;}
+\DoxyCodeLine{116 \};}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118 \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}
